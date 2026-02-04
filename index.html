@@ -22,6 +22,20 @@
       margin: 0 auto;
       padding: 40px 20px 20px;
       text-align: center;
+      position: relative;
+    }
+
+    /* ★ タイトル（黒・左寄せ・大きめ） */
+    .cover-title {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 3rem;       /* ← 約1.5倍 */
+      font-weight: 800;
+      color: #000000;        /* ← 黒 */
+      letter-spacing: 2px;
+      pointer-events: none;
+      text-align: left;
     }
 
     .cover img {
@@ -72,7 +86,7 @@
       justify-content: space-between;
       gap: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      text-align: center; /* ← ボタン中央寄せのため追加 */
+      text-align: center;
     }
 
     .acp-side-text {
@@ -91,7 +105,7 @@
       border-radius: 6px;
       font-size: 0.9rem;
       text-align: center;
-      margin: 0 auto; /* ← 中央寄せ */
+      margin: 0 auto;
     }
 
     .acp-side-button:hover {
@@ -115,7 +129,7 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       border-left: 10px solid;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
-      text-align: center; /* ← ボタン中央寄せのため追加 */
+      text-align: center;
     }
 
     .card:hover {
@@ -130,7 +144,7 @@
       align-items: center;
       gap: 6px;
       color: #1f3b57;
-      justify-content: center; /* ← アイコンと文字を中央寄せ */
+      justify-content: center;
     }
 
     .card p {
@@ -149,7 +163,7 @@
       border-radius: 6px;
       font-size: 0.9rem;
       text-align: center;
-      margin: 0 auto; /* ← 中央寄せ */
+      margin: 0 auto;
     }
 
     .card a:hover {
@@ -184,8 +198,9 @@
 
 <body>
 
-  <!-- 表紙画像 -->
+  <!-- 表紙画像（タイトル重ね） -->
   <div class="cover">
+    <div class="cover-title">ACP小樽モデル</div>
     <img src="acp_cover.png" alt="ACP表紙画像">
     <div class="caption">ACPのイメージ図。自分らしく最後までを実践するための道筋です。</div>
   </div>
